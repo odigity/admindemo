@@ -1,0 +1,306 @@
+- model: worlds.medium
+  pk: 1
+  fields:
+    label: Written
+- model: worlds.medium
+  pk: 2
+  fields:
+    label: Illustrated
+- model: worlds.medium
+  pk: 3
+  fields:
+    label: Video
+- model: worlds.medium
+  pk: 4
+  fields:
+    label: Book
+    parent: 1
+- model: worlds.medium
+  pk: 5
+  fields:
+    label: Short Story
+    parent: 1
+- model: worlds.medium
+  pk: 6
+  fields:
+    label: Comic Book / Graphic Novel
+    parent: 2
+- model: worlds.medium
+  pk: 7
+  fields:
+    label: Comic Strip / Web Comic
+    parent: 2
+- model: worlds.medium
+  pk: 8
+  fields:
+    label: Animated
+    parent: 3
+- model: worlds.medium
+  pk: 9
+  fields:
+    label: Filmed
+    parent: 3
+
+- model: worlds.universe
+  pk: 1
+  fields:
+    name: Firefly
+
+- model: worlds.series
+  pk: 1
+  fields:
+    title: Firefly
+- model: worlds.series
+  pk: 2
+  fields:
+    title: 'Serenity: Those Left Behind'
+
+- model: worlds.unitoffiction
+  pk: 1
+  fields:
+    title: Serenity
+    length: 86
+    pub_date: 2002-12-20
+    medium: 9
+    universe: 1
+    _order: 1
+- model: worlds.episode
+  pk: 1
+  fields:
+    series: 1
+    number: 1
+- model: worlds.unitoffiction
+  pk: 2
+  fields:
+    title: The Train Job
+    length: 44
+    pub_date: 2002-09-20
+    medium: 9
+    universe: 1
+    _order: 2
+- model: worlds.episode
+  pk: 2
+  fields:
+    series: 1
+    number: 2
+- model: worlds.unitoffiction
+  pk: 3
+  fields:
+    title: Bushwhacked
+    length: 44
+    pub_date: 2002-09-27
+    medium: 9
+    universe: 1
+    _order: 3
+- model: worlds.episode
+  pk: 3
+  fields:
+    series: 1
+    number: 3
+- model: worlds.unitoffiction
+  pk: 4
+  fields:
+    title: Shindig
+    length: 44
+    pub_date: 2002-11-01
+    medium: 9
+    universe: 1
+    _order: 4
+- model: worlds.episode
+  pk: 4
+  fields:
+    series: 1
+    number: 4
+- model: worlds.unitoffiction
+  pk: 5
+  fields:
+    title: Safe
+    length: 44
+    pub_date: 2002-11-09
+    medium: 9
+    universe: 1
+    _order: 5
+- model: worlds.episode
+  pk: 5
+  fields:
+    series: 1
+    number: 5
+- model: worlds.unitoffiction
+  pk: 6
+  fields:
+    title: Our Mrs. Reynolds
+    length: 44
+    pub_date: 2002-10-04
+    medium: 9
+    universe: 1
+    _order: 6
+- model: worlds.episode
+  pk: 6
+  fields:
+    series: 1
+    number: 6
+- model: worlds.unitoffiction
+  pk: 7
+  fields:
+    title: Jaynestown
+    length: 44
+    pub_date: 2002-10-18
+    medium: 9
+    universe: 1
+    _order: 7
+- model: worlds.episode
+  pk: 7
+  fields:
+    series: 1
+    number: 7
+- model: worlds.unitoffiction
+  pk: 8
+  fields:
+    title: Out of Gas
+    length: 44
+    pub_date: 2002-10-25
+    medium: 9
+    universe: 1
+    _order: 8
+- model: worlds.episode
+  pk: 8
+  fields:
+    series: 1
+    number: 8
+- model: worlds.unitoffiction
+  pk: 9
+  fields:
+    title: Ariel
+    length: 44
+    pub_date: 2002-11-15
+    medium: 9
+    universe: 1
+    _order: 9
+- model: worlds.episode
+  pk: 9
+  fields:
+    series: 1
+    number: 9
+- model: worlds.unitoffiction
+  pk: 10
+  fields:
+    title: War Stories
+    length: 44
+    pub_date: 2002-12-06
+    medium: 9
+    universe: 1
+    _order: 10
+- model: worlds.episode
+  pk: 10
+  fields:
+    series: 1
+    number: 10
+- model: worlds.unitoffiction
+  pk: 11
+  fields:
+    title: Trash
+    length: 44
+    pub_date: 2003-07-21
+    medium: 9
+    universe: 1
+    _order: 11
+- model: worlds.episode
+  pk: 11
+  fields:
+    series: 1
+    number: 11
+- model: worlds.unitoffiction
+  pk: 12
+  fields:
+    title: The Message
+    length: 44
+    pub_date: 2002-07-28
+    medium: 9
+    universe: 1
+    _order: 12
+- model: worlds.episode
+  pk: 12
+  fields:
+    series: 1
+    number: 12
+- model: worlds.unitoffiction
+  pk: 13
+  fields:
+    title: Heart of Gold
+    length: 44
+    pub_date: 2003-08-04
+    medium: 9
+    universe: 1
+    _order: 13
+- model: worlds.episode
+  pk: 13
+  fields:
+    series: 1
+    number: 13
+- model: worlds.unitoffiction
+  pk: 14
+  fields:
+    title: Objects in Space
+    length: 44
+    pub_date: 2002-12-13
+    medium: 9
+    universe: 1
+    _order: 14
+- model: worlds.episode
+  pk: 14
+  fields:
+    series: 1
+    number: 14
+
+- model: worlds.unitoffiction
+  pk: 15
+  fields:
+    title: 'Serenity: Those Left Behind, Part 1'
+    length: 22
+    pub_date: 2005-07-20
+    medium: 6
+    universe: 1
+    _order: 15
+- model: worlds.episode
+  pk: 15
+  fields:
+    series: 2
+    number: 1
+- model: worlds.unitoffiction
+  pk: 16
+  fields:
+    title: 'Serenity: Those Left Behind, Part 2' 
+    length: 22
+    pub_date: 2005-08-16
+    medium: 6
+    universe: 1
+    _order: 16
+- model: worlds.episode
+  pk: 16
+  fields:
+    series: 2
+    number: 2
+- model: worlds.unitoffiction
+  pk: 17
+  fields:
+    title: 'Serenity: Those Left Behind, Part 3'
+    length: 22
+    pub_date: 2005-09-10
+    medium: 6
+    universe: 1
+    _order: 17
+- model: worlds.episode
+  pk: 17
+  fields:
+    series: 2
+    number: 3
+
+- model: worlds.unitoffiction
+  pk: 18
+  fields:
+    title: Serenity
+    length: 119
+    pub_date: 2005-08-22
+    medium: 9
+    universe: 1
+    _order: 18
