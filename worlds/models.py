@@ -22,6 +22,7 @@ class UnitOfFiction(models.Model):
 
     class Meta:
         order_with_respect_to = 'universe'                  # adds column `_order`
+        verbose_name_plural = 'units of fiction'
 
 
 class Character(models.Model):
@@ -32,6 +33,9 @@ class Character(models.Model):
 
 class Series(models.Model):
     title = models.CharField(max_length=30)
+
+    class Meta:
+        verbose_name_plural = 'series'
 
 
 class Episode(UnitOfFiction):
