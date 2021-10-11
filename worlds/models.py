@@ -13,6 +13,8 @@ class Medium(models.Model):
 
 class Universe(models.Model):
     name = models.CharField(max_length=30)
+    creator = models.CharField(max_length=30)
+    birth_year = models.IntegerField()
 
     def __str__(self):
         return self.name
@@ -45,6 +47,7 @@ class Character(models.Model):
 
 
 class Series(models.Model):
+    universe = models.ForeignKey(Universe, on_delete=models.CASCADE)
     title = models.CharField(max_length=30)
 
     class Meta:
