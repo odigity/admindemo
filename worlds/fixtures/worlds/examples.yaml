@@ -78,6 +78,24 @@
     name: Buffyverse
     creator: Joss Whedon
     birth_year: 1997
+- model: worlds.universe
+  pk: 3
+  fields:
+    name: Babylon 5
+    creator: J. Michael Straczynski
+    birth_year: 1993
+- model: worlds.universe
+  pk: 4
+  fields:
+    name: Star Trek
+    creator: Gene Roddenberry
+    birth_year: 1966
+- model: worlds.universe
+  pk: 5
+  fields:
+    name: Stargate
+    creator: Brad Wright
+    birth_year: 1994
 
 - model: worlds.series
   pk: 1
