@@ -10,11 +10,11 @@
 
 ![](gallery/2.png?raw=true)
 
-### Changelist page for Mediums, empty
+### Changelist page for Universes, empty
 
 ![](gallery/3.png?raw=true)
 
-### Changelist page for Mediums, populated
+### Changelist page for Universes, populated
 
 ![](gallery/4.png?raw=true)
 
@@ -38,7 +38,7 @@
 
 ![](gallery/9.png?raw=true)
 
-### Change page for Universe, with readonly_fields = ('creator')
+### Change page for Universe, with readonly_fields = ('creator',)
 
 ![](gallery/10.png?raw=true)
 
