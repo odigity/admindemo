@@ -1,7 +1,7 @@
 Hello.
 
-![alt](gallery/0 - Index page, empty.png)
+![alt](gallery/1.png)
 
-![alt](gallery/0 - Index page, empty.png?raw=true)
+![alt](gallery/1.png?raw=true)
 
-![alt](gallery/0 - Index page, empty.png "Title")
+![alt](gallery/1.png "Title")
