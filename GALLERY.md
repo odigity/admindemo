@@ -1,6 +1,6 @@
 # Gallery
 
-## Defaults
+## Django Admin - Defaults
 
 ### Index page, empty
 
@@ -24,7 +24,7 @@
 
 TODO MORE
 
-## Built-In Customizations
+## Django Admin - Options
 
 TODO
 
