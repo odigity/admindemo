@@ -1,4 +1,4 @@
-See [Gallery](Gallery.md) for screenshots.
+See [Gallery](GALLERY.md) for screenshots.
 
 ## Dev Cycle
 
