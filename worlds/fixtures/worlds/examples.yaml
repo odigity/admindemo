@@ -29,33 +29,42 @@
 - model: worlds.medium
   pk: 4
   fields:
-    label: Book
-    parent: 1
+    label: Game
 - model: worlds.medium
   pk: 5
   fields:
-    label: Short Story
+    label: Book
     parent: 1
 - model: worlds.medium
   pk: 6
   fields:
-    label: Comic Book / Graphic Novel
-    parent: 2
+    label: Short Story
+    parent: 1
 - model: worlds.medium
   pk: 7
   fields:
-    label: Comic Strip / Web Comic
+    label: Comic Book / Graphic Novel
     parent: 2
 - model: worlds.medium
   pk: 8
   fields:
-    label: Animated
-    parent: 3
+    label: Comic Strip / Web Comic
+    parent: 2
 - model: worlds.medium
   pk: 9
   fields:
+    label: Animated
+    parent: 3
+- model: worlds.medium
+  pk: 10
+  fields:
     label: Filmed
     parent: 3
+- model: worlds.medium
+  pk: 11
+  fields:
+    label: Video Game
+    parent: 4
 
 - model: worlds.universe
   pk: 1
