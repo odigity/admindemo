@@ -36,4 +36,10 @@ class UnitOfFictionAdmin(admin.ModelAdmin):
 
 @admin.register(Universe)
 class UniverseAdmin(admin.ModelAdmin):
-    pass
+#    pass
+#    fields = ('name', ('creator', 'birth_year'))
+    fieldsets = (
+        ( None, { 'description': "Optional description.", 'fields': ('name',) } ),
+#        ( 'Creation', { 'description': "Optional description.", 'fields': ('creator', 'birth_year') } ),
+        ( 'Creation', { 'classes': ('collapse',), 'description': "Optional description.", 'fields': ('creator', 'birth_year') } ),
+    )

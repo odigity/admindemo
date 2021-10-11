@@ -22,6 +22,22 @@
 
 ![](gallery/5.png?raw=true)
 
+### Change page for Universe, with fields = ('name', ('creator', 'birth_year'))
+
+![](gallery/6.png?raw=true)
+
+### Change page for Universe, with fieldsets
+
+![](gallery/7.png?raw=true)
+
+### Change page for Universe, with fieldsets and collapse class (closed)
+
+![](gallery/8.png?raw=true)
+
+### Change page for Universe, with fieldsets and collapse class (open)
+
+![](gallery/9.png?raw=true)
+
 TODO MORE
 
 ## Django Admin - Options
