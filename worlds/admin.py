@@ -32,17 +32,24 @@ class SeriesAdmin(admin.ModelAdmin):
 @admin.register(UnitOfFiction)
 class UnitOfFictionAdmin(admin.ModelAdmin):
     pass
+#    date_hierarchy = 'birth_year'
 
 
 @admin.register(Universe)
 class UniverseAdmin(admin.ModelAdmin):
-    pass
+#    pass
 #    fields = ('name', ('creator', 'birth_year'))
 #    fieldsets = (
 #        ( None, { 'description': "Optional description.", 'fields': ('name',) } ),
 #        ( 'Creation', { 'description': "Optional description.", 'fields': ('creator', 'birth_year') } ),
 #        ( 'Creation', { 'classes': ('collapse',), 'description': "Optional description.", 'fields': ('creator', 'birth_year') } ),
 #    )
+    list_display = ('birth_year', 'name', 'creator')
+#    list_display_links = None
+#    list_display_links = ('name',)
+#    list_editable = ('creator',)
+#    list_filter = ('birth_year', 'creator')
 #    readonly_fields = ('creator',)
 #    save_as = True
 #    save_on_top = True
+    search_fields = ('name', 'creator')
