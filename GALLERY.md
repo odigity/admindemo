@@ -38,6 +38,18 @@
 
 ![](gallery/9.png?raw=true)
 
+### Change page for Universe, with readonly_fields = ('creator')
+
+![](gallery/10.png?raw=true)
+
+### Change page for Universe, with save_as = True
+
+![](gallery/11.png?raw=true)
+
+### Change page for Universe, with save_on_top = True
+
+![](gallery/12.png?raw=true)
+
 TODO MORE
 
 ## Django Admin - Options
