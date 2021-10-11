@@ -63,6 +63,12 @@
     name: Firefly
     creator: Joss Whedon
     birth_year: 2002
+- model: worlds.universe
+  pk: 2
+  fields:
+    name: Buffyverse
+    creator: Joss Whedon
+    birth_year: 1997
 
 - model: worlds.series
   pk: 1
@@ -427,3 +433,9 @@
   fields:
     from_character: 7
     to_character: 8
+
+- model: worlds.character
+  pk: 10
+  fields:
+    universe: 2
+    name: Buffy Summers

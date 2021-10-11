@@ -1,11 +1,17 @@
+from django import forms
 from django.contrib import admin
 
 from .models import Character, Episode, Medium, Series, UnitOfFiction, Universe
 
 
+class CharacterAdminForm(forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['friends'].queryset = Character.objects.filter(universe=self.instance.universe)
+
 @admin.register(Character)
 class CharacterAdmin(admin.ModelAdmin):
-    pass
+    form = CharacterAdminForm
 
 
 @admin.register(Episode)
@@ -31,5 +37,3 @@ class UnitOfFictionAdmin(admin.ModelAdmin):
 @admin.register(Universe)
 class UniverseAdmin(admin.ModelAdmin):
     pass
-
-
