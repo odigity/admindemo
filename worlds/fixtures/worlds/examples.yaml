@@ -304,3 +304,106 @@
     medium: 9
     universe: 1
     _order: 18
+
+- model: worlds.character
+  pk: 1
+  fields:
+    universe: 1
+    name: Malcolm Reynolds
+- model: worlds.character
+  pk: 2
+  fields:
+    universe: 1
+    name: Zoe Washburne
+- model: worlds.character
+  pk: 3
+  fields:
+    universe: 1
+    name: Hoban Washburne
+- model: worlds.character
+  pk: 4
+  fields:
+    universe: 1
+    name: Inara Serra
+- model: worlds.character
+  pk: 5
+  fields:
+    universe: 1
+    name: Jayne Cobb
+- model: worlds.character
+  pk: 6
+  fields:
+    universe: 1
+    name: Kaylee Frye
+- model: worlds.character
+  pk: 7
+  fields:
+    universe: 1
+    name: Simon Tam
+- model: worlds.character
+  pk: 8
+  fields:
+    universe: 1
+    name: River Tam
+- model: worlds.character
+  pk: 9
+  fields:
+    universe: 1
+    name: Shepherd Derrial Book
+
+- model: worlds.character_appearances
+  pk: 1
+  fields:
+    character: 1
+    unitoffiction: 1
+- model: worlds.character_appearances
+  pk: 2
+  fields:
+    character: 1
+    unitoffiction: 2
+- model: worlds.character_appearances
+  pk: 3
+  fields:
+    character: 2
+    unitoffiction: 1
+- model: worlds.character_appearances
+  pk: 4
+  fields:
+    character: 2
+    unitoffiction: 2
+
+- model: worlds.character_friends
+  pk: 1
+  fields:
+    from_character: 1
+    to_character: 2
+- model: worlds.character_friends
+  pk: 2
+  fields:
+    from_character: 1
+    to_character: 3
+- model: worlds.character_friends
+  pk: 3
+  fields:
+    from_character: 1
+    to_character: 6
+- model: worlds.character_friends
+  pk: 4
+  fields:
+    from_character: 2
+    to_character: 3
+- model: worlds.character_friends
+  pk: 5
+  fields:
+    from_character: 2
+    to_character: 6
+- model: worlds.character_friends
+  pk: 6
+  fields:
+    from_character: 3
+    to_character: 6
+- model: worlds.character_friends
+  pk: 7
+  fields:
+    from_character: 7
+    to_character: 8

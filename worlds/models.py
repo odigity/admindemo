@@ -27,7 +27,7 @@ class UnitOfFiction(models.Model):
     pub_date = models.DateField()
 
     class Meta:
-        order_with_respect_to = 'universe'                  # adds column `_order`
+        order_with_respect_to = 'universe'                  # +column:_order
         verbose_name_plural = 'units of fiction'
 
     def __str__(self):
@@ -35,9 +35,10 @@ class UnitOfFiction(models.Model):
 
 
 class Character(models.Model):
+    universe = models.ForeignKey(Universe, on_delete=models.CASCADE)
     name = models.CharField(max_length=30)
-    appearances = ManyToManyField(UnitOfFiction)            # adds table `worlds_character_appearances`
-    friends = ManyToManyField('self', symmetrical=True)     # adds table `worlds_character_friends`
+    appearances = ManyToManyField(UnitOfFiction)            # +table:worlds_character_appearances
+    friends = ManyToManyField('self', symmetrical=True)     # +table:worlds_character_friends
 
     def __str__(self):
         return self.name
