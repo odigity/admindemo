@@ -255,7 +255,7 @@
 - model: worlds.unitoffiction
   pk: 15
   fields:
-    title: 'Serenity: Those Left Behind, Part 1'
+    title: 'Those Left Behind, Part 1'
     length: 22
     pub_date: 2005-07-20
     medium: 6
@@ -269,7 +269,7 @@
 - model: worlds.unitoffiction
   pk: 16
   fields:
-    title: 'Serenity: Those Left Behind, Part 2' 
+    title: 'Those Left Behind, Part 2' 
     length: 22
     pub_date: 2005-08-16
     medium: 6
@@ -283,7 +283,7 @@
 - model: worlds.unitoffiction
   pk: 17
   fields:
-    title: 'Serenity: Those Left Behind, Part 3'
+    title: 'Those Left Behind, Part 3'
     length: 22
     pub_date: 2005-09-10
     medium: 6
