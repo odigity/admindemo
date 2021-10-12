@@ -61,23 +61,23 @@ URL                       | Name
 
 ![](gallery/4.png?raw=true)
 
-### Changelist page for Universes, populated, with list_display = ('birth_year', 'name', 'creator')
+### Changelist page for Universes, with list_display = ('birth_year', 'name', 'creator')
 
 ![](gallery/13.png?raw=true)
 
-### Changelist page for Universes, populated, with list_display = ('birth_year', 'name', 'creator') and list_display_links = None
+### Changelist page for Universes, with list_display = ('birth_year', 'name', 'creator') and list_display_links = None
 
 ![](gallery/14.png?raw=true)
 
-### Changelist page for Universes, populated, with list_display = ('birth_year', 'name', 'creator') and list_display_links = ('name',)
+### Changelist page for Universes, with list_display = ('birth_year', 'name', 'creator') and list_display_links = ('name',)
 
 ![](gallery/15.png?raw=true)
 
-### Changelist page for Universes, populated, with list_display = ('birth_year', 'name', 'creator') and list_editable = ('creator',)
+### Changelist page for Universes, with list_display = ('birth_year', 'name', 'creator') and list_editable = ('creator',)
 
 ![](gallery/16.png?raw=true)
 
-### Changelist page for Universes, populated, with list_display = ('birth_year', 'name', 'creator') and list_filter = ('birth_year', 'creator')
+### Changelist page for Universes, with list_display = ('birth_year', 'name', 'creator') and list_filter = ('birth_year', 'creator')
 
 ![](gallery/17.png?raw=true)
 
@@ -85,13 +85,21 @@ URL                       | Name
 
 ![](gallery/17a.png?raw=true)
 
-### Changelist page for Universes, populated, with list_display = ('birth_year', 'name', 'creator') and search_fields = ('name', 'creator')
+### Changelist page for Universes, with list_display = ('birth_year', 'name', 'creator') and search_fields = ('name', 'creator')
 
 ![](gallery/18.png?raw=true)
 
 ### ...searched for 'st'
 
 ![](gallery/18a.png?raw=true)
+
+### Changelist page for Mediums
+
+![](gallery/19.png?raw=true)
+
+### Changelist page for Mediums, with list_display = ('label', 'parent')
+
+![](gallery/20.png?raw=true)
 
 TODO MORE
 
