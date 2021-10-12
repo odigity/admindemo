@@ -24,8 +24,8 @@ class EpisodeAdmin(admin.ModelAdmin):
 @admin.register(Medium)
 class MediumAdmin(admin.ModelAdmin):
 #    pass
-    list_display = ('label', 'orderable_parent')
-    list_select_related = ('parent',)   # optimize queries
+    list_display = [ 'label', 'orderable_parent' ]
+    list_select_related = [ 'parent' ]   # optimize queries
 
     @admin.display(description='parent', ordering='parent__label')
     def orderable_parent(self, obj):
@@ -41,24 +41,30 @@ class SeriesAdmin(admin.ModelAdmin):
 @admin.register(UnitOfFiction)
 class UnitOfFictionAdmin(admin.ModelAdmin):
 #    date_hierarchy = 'pub_date'
+#    list_display = [ 'birth_year', 'name', 'creator' ]
+#    list_filter = [ 'pub_date' ]
+    list_filter = [ 'pub_date', 'medium', 'universe', 'length' ]
     readonly_fields = ('universe',)
 
 
 @admin.register(Universe)
 class UniverseAdmin(admin.ModelAdmin):
     pass
-#    fields = ('name', ('creator', 'birth_year'))
-#    fieldsets = (
-#        ( None, { 'description': "Optional description.", 'fields': ('name',) } ),
-#        ( 'Creation', { 'description': "Optional description.", 'fields': ('creator', 'birth_year') } ),
-#        ( 'Creation', { 'classes': ('collapse',), 'description': "Optional description.", 'fields': ('creator', 'birth_year') } ),
-#    )
-#    list_display = ('birth_year', 'name', 'creator')
+#    fields = [ 'name', 'creator', 'birth_year' ]
+#    fields = [ 'name', ( 'creator', 'birth_year' ) ]
+#    fields = [ 'name', [ 'creator', 'birth_year' ] ]
+#    fieldsets = [
+#        ( None, { 'description': "Optional description.", 'fields': [ 'name' ] } ),
+#        ( 'Creation', { 'description': "Optional description.", 'fields': [ 'creator', 'birth_year' ] } ),
+#        ( 'Creation', { 'classes': ('collapse',), 'description': "Optional description.", 'fields': [ 'creator', 'birth_year' ] } ),
+#    ]
+#    list_display = [ 'birth_year', 'name', 'creator' ]
 #    list_display_links = None
-#    list_display_links = ('name',)
-#    list_editable = ('creator',)
-#    list_filter = ('birth_year', 'creator')
-#    readonly_fields = ('creator',)
+#    list_display_links = [ 'name' ]
+#    list_editable = [ 'creator' ]
+#    list_filter = [ 'birth_year', 'creator' ]
+#    ordering = [ 'name' ]
+#    readonly_fields = [ 'creator' ]
 #    save_as = True
 #    save_on_top = True
-#    search_fields = ('name', 'creator')
+#    search_fields = [ 'name', 'creator' ]

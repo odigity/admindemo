@@ -25,7 +25,7 @@ URL                       | Name
 
 ![](gallery/5.png?raw=true)
 
-### Change page for Universe, with fields = ('name', ('creator', 'birth_year'))
+### Change page for Universe, with fields = [ 'name', ('creator', 'birth_year') ]
 
 ![](gallery/6.png?raw=true)
 
@@ -41,7 +41,7 @@ URL                       | Name
 
 ![](gallery/9.png?raw=true)
 
-### Change page for Universe, with readonly_fields = ('creator',)
+### Change page for Universe, with readonly_fields = [ 'creator' ]
 
 ![](gallery/10.png?raw=true)
 
@@ -61,23 +61,27 @@ URL                       | Name
 
 ![](gallery/4.png?raw=true)
 
-### Changelist page for Universes, with list_display = ('birth_year', 'name', 'creator')
+### Changelist page for Universes, with list_display = [ 'birth_year', 'name', 'creator' ]
 
 ![](gallery/13.png?raw=true)
 
-### Changelist page for Universes, with list_display = ('birth_year', 'name', 'creator') and list_display_links = None
+### Changelist page for Universes, with list_display = [ 'birth_year', 'name', 'creator' ] and ordering = ['name']
+
+![](gallery/21.png?raw=true)
+
+### Changelist page for Universes, with list_display = [ 'birth_year', 'name', 'creator' ] and list_display_links = None
 
 ![](gallery/14.png?raw=true)
 
-### Changelist page for Universes, with list_display = ('birth_year', 'name', 'creator') and list_display_links = ('name',)
+### Changelist page for Universes, with list_display = [ 'birth_year', 'name', 'creator' ] and list_display_links = [ 'name' ]
 
 ![](gallery/15.png?raw=true)
 
-### Changelist page for Universes, with list_display = ('birth_year', 'name', 'creator') and list_editable = ('creator',)
+### Changelist page for Universes, with list_display = [ 'birth_year', 'name', 'creator' ] and list_editable = [ 'creator' ]
 
 ![](gallery/16.png?raw=true)
 
-### Changelist page for Universes, with list_display = ('birth_year', 'name', 'creator') and list_filter = ('birth_year', 'creator')
+### Changelist page for Universes, with list_display = [ 'birth_year', 'name', 'creator' ] and list_filter = [ 'birth_year', 'creator' ]
 
 ![](gallery/17.png?raw=true)
 
@@ -85,7 +89,7 @@ URL                       | Name
 
 ![](gallery/17a.png?raw=true)
 
-### Changelist page for Universes, with list_display = ('birth_year', 'name', 'creator') and search_fields = ('name', 'creator')
+### Changelist page for Universes, with list_display = [ 'birth_year', 'name', 'creator' ] and search_fields = [ 'name', 'creator' ]
 
 ![](gallery/18.png?raw=true)
 
@@ -97,9 +101,37 @@ URL                       | Name
 
 ![](gallery/19.png?raw=true)
 
-### Changelist page for Mediums, with list_display = ('label', 'parent')
+### Changelist page for Mediums, with list_display = [ 'label', 'parent' ]
 
 ![](gallery/20.png?raw=true)
+
+### Changelist page for Units of Fiction
+
+![](gallery/22.png?raw=true)
+
+### Changelist page for Units of Fiction, with date_hierarchy = 'pub_date'
+
+![](gallery/23.png?raw=true)
+
+### ...clicked to filter on '1997'
+
+![](gallery/24.png?raw=true)
+
+### ...clicked to filter on 'March 1997'
+
+![](gallery/25.png?raw=true)
+
+### Changelist page for Units of Fiction, with date_hierarchy = 'pub_date' and list_filter = [ 'pub_date' ]
+
+![](gallery/26.png?raw=true)
+
+### Changelist page for Units of Fiction, with date_hierarchy = 'pub_date' and list_filter = [ 'pub_date', 'medium', 'universe', 'length' ]
+
+![](gallery/27.png?raw=true)
+
+
+
+
 
 TODO MORE
 

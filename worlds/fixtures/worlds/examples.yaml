@@ -107,6 +107,73 @@
   fields:
     universe: 1
     title: 'Serenity: Those Left Behind'
+- model: worlds.series
+  pk: 3
+  fields:
+    universe: 2
+    title: 'Buffy the Vampire Slayer'
+- model: worlds.series
+  pk: 4
+  fields:
+    universe: 2
+    title: 'Angel'
+- model: worlds.series
+  pk: 5
+  fields:
+    universe: 3
+    title: 'Babylon 5'
+- model: worlds.series
+  pk: 6
+  fields:
+    universe: 3
+    title: 'Crusade'
+- model: worlds.series
+  pk: 7
+  fields:
+    universe: 4
+    title: 'Star Trek'
+- model: worlds.series
+  pk: 8
+  fields:
+    universe: 4
+    title: 'Star Trek: The Animated Series'
+- model: worlds.series
+  pk: 9
+  fields:
+    universe: 4
+    title: 'Star Trek: The Next Generation'
+- model: worlds.series
+  pk: 10
+  fields:
+    universe: 4
+    title: 'Deep Space Nine'
+- model: worlds.series
+  pk: 11
+  fields:
+    universe: 4
+    title: 'Voyager'
+- model: worlds.series
+  pk: 12
+  fields:
+    universe: 4
+    title: 'Enterprise'
+- model: worlds.series
+  pk: 13
+  fields:
+    universe: 5
+    title: 'Stargate: SG-1'
+- model: worlds.series
+  pk: 14
+  fields:
+    universe: 5
+    title: 'Stargate: Atlantis'
+- model: worlds.series
+  pk: 15
+  fields:
+    universe: 5
+    title: 'Stargate: Universe'
+
+
 
 - model: worlds.unitoffiction
   pk: 1
@@ -304,7 +371,6 @@
   fields:
     series: 1
     number: 14
-
 - model: worlds.unitoffiction
   pk: 15
   fields:
@@ -347,7 +413,6 @@
   fields:
     series: 2
     number: 3
-
 - model: worlds.unitoffiction
   pk: 18
   fields:
@@ -357,7 +422,6 @@
     medium: 9
     universe: 1
     _order: 18
-
 - model: worlds.character
   pk: 1
   fields:
@@ -403,7 +467,6 @@
   fields:
     universe: 1
     name: Shepherd Derrial Book
-
 - model: worlds.character_appearances
   pk: 1
   fields:
@@ -424,7 +487,6 @@
   fields:
     character: 2
     unitoffiction: 2
-
 - model: worlds.character_friends
   pk: 1
   fields:
@@ -461,8 +523,152 @@
     from_character: 7
     to_character: 8
 
+
+
+- model: worlds.unitoffiction
+  pk: 26
+  fields:
+    title: 'Welcome to the Hellmouth'
+    length: 44
+    pub_date: 1997-03-10
+    medium: 6
+    universe: 2
+    _order: 1
+- model: worlds.episode
+  pk: 26
+  fields:
+    series: 3
+    number: S01E01
+- model: worlds.unitoffiction
+  pk: 27
+  fields:
+    title: 'The Harvest'
+    length: 44
+    pub_date: 1997-03-10
+    medium: 6
+    universe: 2
+    _order: 2
+- model: worlds.episode
+  pk: 27
+  fields:
+    series: 3
+    number: S01E02
+- model: worlds.unitoffiction
+  pk: 28
+  fields:
+    title: 'Witch'
+    length: 44
+    pub_date: 1997-03-17
+    medium: 6
+    universe: 2
+    _order: 3
+- model: worlds.episode
+  pk: 28
+  fields:
+    series: 3
+    number: S01E03
 - model: worlds.character
   pk: 10
   fields:
     universe: 2
     name: Buffy Summers
+
+
+
+- model: worlds.unitoffiction
+  pk: 18
+  fields:
+    title: 'Stargate'
+    length: 121
+    pub_date: 1994-10-28
+    medium: 6
+    universe: 5
+    _order: 1
+- model: worlds.unitoffiction
+  pk: 19
+  fields:
+    title: 'Children of the Gods'
+    length: 92
+    pub_date: 1997-07-27
+    medium: 6
+    universe: 5
+    _order: 2
+- model: worlds.episode
+  pk: 19
+  fields:
+    series: 13
+    number: S01E01E02
+- model: worlds.unitoffiction
+  pk: 20
+  fields:
+    title: 'The Enemy Within'
+    length: 44
+    pub_date: 1997-08-01
+    medium: 6
+    universe: 5
+    _order: 3
+- model: worlds.episode
+  pk: 20
+  fields:
+    series: 13
+    number: S01E03
+- model: worlds.unitoffiction
+  pk: 21
+  fields:
+    title: 'Emancipation'
+    length: 44
+    pub_date: 1997-08-08
+    medium: 6
+    universe: 5
+    _order: 4
+- model: worlds.episode
+  pk: 21
+  fields:
+    series: 13
+    number: S01E04
+- model: worlds.unitoffiction
+  pk: 22
+  fields:
+    title: 'Rising'
+    length: 86
+    pub_date: 2004-07-16
+    medium: 6
+    universe: 5
+    _order: 5
+- model: worlds.episode
+  pk: 22
+  fields:
+    series: 14
+    number: S01E01E02
+- model: worlds.unitoffiction
+  pk: 23
+  fields:
+    title: 'Hide and Seek'
+    length: 44
+    pub_date: 2004-07-23
+    medium: 6
+    universe: 5
+    _order: 6
+- model: worlds.episode
+  pk: 23
+  fields:
+    series: 14
+    number: S01E03
+- model: worlds.unitoffiction
+  pk: 24
+  fields:
+    title: 'Stargate: The Ark of Truth'
+    length: 102
+    pub_date: 2008-03-11
+    medium: 6
+    universe: 5
+    _order: 7
+- model: worlds.unitoffiction
+  pk: 25
+  fields:
+    title: 'Stargate: Continuum'
+    length: 98
+    pub_date: 2008-07-29
+    medium: 6
+    universe: 5
+    _order: 8
