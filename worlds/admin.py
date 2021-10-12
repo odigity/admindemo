@@ -11,7 +11,9 @@ class CharacterAdminForm(forms.ModelForm):
 
 @admin.register(Character)
 class CharacterAdmin(admin.ModelAdmin):
+#    pass
     form = CharacterAdminForm
+    readonly_fields = ('universe',)
 
 
 @admin.register(Episode)
@@ -21,30 +23,32 @@ class EpisodeAdmin(admin.ModelAdmin):
 
 @admin.register(Medium)
 class MediumAdmin(admin.ModelAdmin):
-    pass
-
+#    pass
+    list_display = ('label', 'parent', 'parent_id')
+    list_select_related = ('parent',)   # optimize queries
 
 @admin.register(Series)
 class SeriesAdmin(admin.ModelAdmin):
-    pass
+#    pass
+    readonly_fields = ('universe',)
 
 
 @admin.register(UnitOfFiction)
 class UnitOfFictionAdmin(admin.ModelAdmin):
-    pass
-#    date_hierarchy = 'birth_year'
+#    date_hierarchy = 'pub_date'
+    readonly_fields = ('universe',)
 
 
 @admin.register(Universe)
 class UniverseAdmin(admin.ModelAdmin):
-#    pass
+    pass
 #    fields = ('name', ('creator', 'birth_year'))
 #    fieldsets = (
 #        ( None, { 'description': "Optional description.", 'fields': ('name',) } ),
 #        ( 'Creation', { 'description': "Optional description.", 'fields': ('creator', 'birth_year') } ),
 #        ( 'Creation', { 'classes': ('collapse',), 'description': "Optional description.", 'fields': ('creator', 'birth_year') } ),
 #    )
-    list_display = ('birth_year', 'name', 'creator')
+#    list_display = ('birth_year', 'name', 'creator')
 #    list_display_links = None
 #    list_display_links = ('name',)
 #    list_editable = ('creator',)
@@ -52,4 +56,4 @@ class UniverseAdmin(admin.ModelAdmin):
 #    readonly_fields = ('creator',)
 #    save_as = True
 #    save_on_top = True
-    search_fields = ('name', 'creator')
+#    search_fields = ('name', 'creator')

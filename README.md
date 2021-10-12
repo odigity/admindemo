@@ -12,6 +12,7 @@ See [Gallery](GALLERY.md) for screenshots.
 worlds_character
     id                      integer     NOT NULL PRIMARY KEY AUTOINCREMENT
     name                    varchar(30) NOT NULL
+    universe_id             bigint      NOT NULL REFERENCES "worlds_universe" ("id")
 
 worlds_character_appearances
     id                      integer     NOT NULL PRIMARY KEY AUTOINCREMENT
