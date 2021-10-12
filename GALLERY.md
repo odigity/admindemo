@@ -129,11 +129,23 @@ URL                       | Name
 
 ![](gallery/27.png?raw=true)
 
+### Changelist page for Units of Fiction, with list_display = [ 'universe', 'ordinal', 'title', 'pub_date' ]
+
+![](gallery/28.png?raw=true)
+
+### Changelist page for Units of Fiction, with list_display = [ 'universe', 'ordinal', 'title', 'pub_date' ] and ordering = [ 'universe', 'ordinal' ]
+
+![](gallery/29.png?raw=true)
+
+### Changelist page for Units of Fiction, with list_display = [ 'universe_name', 'ordinal', 'title', 'pub_date' ] and ordering = [ 'universe__name', 'ordinal' ]
+
+(`universe_name` -> custom method on UnitOfFiction model)
+
+![](gallery/30.png?raw=true)
 
 
 
 
-TODO MORE
 
 ## Django Admin - Options
 

@@ -24,12 +24,9 @@ class EpisodeAdmin(admin.ModelAdmin):
 @admin.register(Medium)
 class MediumAdmin(admin.ModelAdmin):
 #    pass
-    list_display = [ 'label', 'orderable_parent' ]
-    list_select_related = [ 'parent' ]   # optimize queries
-
-    @admin.display(description='parent', ordering='parent__label')
-    def orderable_parent(self, obj):
-        return obj.parent and obj.parent.label or None
+    list_display = [ 'label', 'parent_label' ]
+    list_select_related = [ 'parent' ]                                      # optimize queries
+#    ordering = [ 'parent__label' ]
 
 
 @admin.register(Series)
@@ -41,9 +38,15 @@ class SeriesAdmin(admin.ModelAdmin):
 @admin.register(UnitOfFiction)
 class UnitOfFictionAdmin(admin.ModelAdmin):
 #    date_hierarchy = 'pub_date'
-#    list_display = [ 'birth_year', 'name', 'creator' ]
+#    list_display = [ 'universe', 'ordinal', 'title', 'pub_date' ]
+#    list_display = [ 'orderable_universe', 'ordinal', 'title', 'pub_date' ]
+    list_display = [ 'universe_name', 'ordinal', 'medium_label', 'title', 'pub_date' ]
+    list_display_links = [ 'title' ]
 #    list_filter = [ 'pub_date' ]
-    list_filter = [ 'pub_date', 'medium', 'universe', 'length' ]
+#    list_filter = [ 'pub_date', 'medium', 'universe', 'length' ]
+    list_select_related = [ 'medium', 'universe' ]                          # optimize queries
+#    ordering = [ 'universe', 'ordinal' ]
+    ordering = [ 'universe__name', 'ordinal' ]
     readonly_fields = ('universe',)
 
 

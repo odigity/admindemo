@@ -181,9 +181,9 @@
     title: Serenity
     length: 86
     pub_date: 2002-12-20
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 1
+    ordinal: 1
 - model: worlds.episode
   pk: 1
   fields:
@@ -195,9 +195,9 @@
     title: The Train Job
     length: 44
     pub_date: 2002-09-20
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 2
+    ordinal: 2
 - model: worlds.episode
   pk: 2
   fields:
@@ -209,9 +209,9 @@
     title: Bushwhacked
     length: 44
     pub_date: 2002-09-27
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 3
+    ordinal: 3
 - model: worlds.episode
   pk: 3
   fields:
@@ -223,9 +223,9 @@
     title: Shindig
     length: 44
     pub_date: 2002-11-01
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 4
+    ordinal: 4
 - model: worlds.episode
   pk: 4
   fields:
@@ -237,9 +237,9 @@
     title: Safe
     length: 44
     pub_date: 2002-11-09
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 5
+    ordinal: 5
 - model: worlds.episode
   pk: 5
   fields:
@@ -251,9 +251,9 @@
     title: Our Mrs. Reynolds
     length: 44
     pub_date: 2002-10-04
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 6
+    ordinal: 6
 - model: worlds.episode
   pk: 6
   fields:
@@ -265,9 +265,9 @@
     title: Jaynestown
     length: 44
     pub_date: 2002-10-18
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 7
+    ordinal: 7
 - model: worlds.episode
   pk: 7
   fields:
@@ -279,9 +279,9 @@
     title: Out of Gas
     length: 44
     pub_date: 2002-10-25
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 8
+    ordinal: 8
 - model: worlds.episode
   pk: 8
   fields:
@@ -293,9 +293,9 @@
     title: Ariel
     length: 44
     pub_date: 2002-11-15
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 9
+    ordinal: 9
 - model: worlds.episode
   pk: 9
   fields:
@@ -307,9 +307,9 @@
     title: War Stories
     length: 44
     pub_date: 2002-12-06
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 10
+    ordinal: 10
 - model: worlds.episode
   pk: 10
   fields:
@@ -321,9 +321,9 @@
     title: Trash
     length: 44
     pub_date: 2003-07-21
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 11
+    ordinal: 11
 - model: worlds.episode
   pk: 11
   fields:
@@ -335,9 +335,9 @@
     title: The Message
     length: 44
     pub_date: 2002-07-28
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 12
+    ordinal: 12
 - model: worlds.episode
   pk: 12
   fields:
@@ -349,9 +349,9 @@
     title: Heart of Gold
     length: 44
     pub_date: 2003-08-04
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 13
+    ordinal: 13
 - model: worlds.episode
   pk: 13
   fields:
@@ -363,9 +363,9 @@
     title: Objects in Space
     length: 44
     pub_date: 2002-12-13
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 14
+    ordinal: 14
 - model: worlds.episode
   pk: 14
   fields:
@@ -377,9 +377,9 @@
     title: 'Those Left Behind, Part 1'
     length: 22
     pub_date: 2005-07-20
-    medium: 6
+    medium: 7
     universe: 1
-    _order: 15
+    ordinal: 15
 - model: worlds.episode
   pk: 15
   fields:
@@ -391,9 +391,9 @@
     title: 'Those Left Behind, Part 2' 
     length: 22
     pub_date: 2005-08-16
-    medium: 6
+    medium: 7
     universe: 1
-    _order: 16
+    ordinal: 16
 - model: worlds.episode
   pk: 16
   fields:
@@ -405,9 +405,9 @@
     title: 'Those Left Behind, Part 3'
     length: 22
     pub_date: 2005-09-10
-    medium: 6
+    medium: 7
     universe: 1
-    _order: 17
+    ordinal: 17
 - model: worlds.episode
   pk: 17
   fields:
@@ -419,9 +419,9 @@
     title: Serenity
     length: 119
     pub_date: 2005-08-22
-    medium: 9
+    medium: 10
     universe: 1
-    _order: 18
+    ordinal: 18
 - model: worlds.character
   pk: 1
   fields:
@@ -531,9 +531,9 @@
     title: 'Welcome to the Hellmouth'
     length: 44
     pub_date: 1997-03-10
-    medium: 6
+    medium: 10
     universe: 2
-    _order: 1
+    ordinal: 1
 - model: worlds.episode
   pk: 26
   fields:
@@ -545,9 +545,9 @@
     title: 'The Harvest'
     length: 44
     pub_date: 1997-03-10
-    medium: 6
+    medium: 10
     universe: 2
-    _order: 2
+    ordinal: 2
 - model: worlds.episode
   pk: 27
   fields:
@@ -559,9 +559,9 @@
     title: 'Witch'
     length: 44
     pub_date: 1997-03-17
-    medium: 6
+    medium: 10
     universe: 2
-    _order: 3
+    ordinal: 3
 - model: worlds.episode
   pk: 28
   fields:
@@ -581,18 +581,18 @@
     title: 'Stargate'
     length: 121
     pub_date: 1994-10-28
-    medium: 6
+    medium: 10
     universe: 5
-    _order: 1
+    ordinal: 1
 - model: worlds.unitoffiction
   pk: 19
   fields:
     title: 'Children of the Gods'
     length: 92
     pub_date: 1997-07-27
-    medium: 6
+    medium: 10
     universe: 5
-    _order: 2
+    ordinal: 2
 - model: worlds.episode
   pk: 19
   fields:
@@ -604,9 +604,9 @@
     title: 'The Enemy Within'
     length: 44
     pub_date: 1997-08-01
-    medium: 6
+    medium: 10
     universe: 5
-    _order: 3
+    ordinal: 3
 - model: worlds.episode
   pk: 20
   fields:
@@ -618,9 +618,9 @@
     title: 'Emancipation'
     length: 44
     pub_date: 1997-08-08
-    medium: 6
+    medium: 10
     universe: 5
-    _order: 4
+    ordinal: 4
 - model: worlds.episode
   pk: 21
   fields:
@@ -632,9 +632,9 @@
     title: 'Rising'
     length: 86
     pub_date: 2004-07-16
-    medium: 6
+    medium: 10
     universe: 5
-    _order: 5
+    ordinal: 5
 - model: worlds.episode
   pk: 22
   fields:
@@ -646,9 +646,9 @@
     title: 'Hide and Seek'
     length: 44
     pub_date: 2004-07-23
-    medium: 6
+    medium: 10
     universe: 5
-    _order: 6
+    ordinal: 6
 - model: worlds.episode
   pk: 23
   fields:
@@ -660,15 +660,15 @@
     title: 'Stargate: The Ark of Truth'
     length: 102
     pub_date: 2008-03-11
-    medium: 6
+    medium: 10
     universe: 5
-    _order: 7
+    ordinal: 7
 - model: worlds.unitoffiction
   pk: 25
   fields:
     title: 'Stargate: Continuum'
     length: 98
     pub_date: 2008-07-29
-    medium: 6
+    medium: 10
     universe: 5
-    _order: 8
+    ordinal: 8
