@@ -7,7 +7,8 @@ from .models import Character, Episode, Medium, Series, UnitOfFiction, Universe
 class CharacterAdminForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['friends'].queryset = Character.objects.filter(universe=self.instance.universe)
+        self.fields['appearances'].queryset = UnitOfFiction.objects.filter(universe=self.instance.universe)
+        self.fields['friends'].queryset = Character.objects.filter(universe=self.instance.universe).exclude(id=self.instance.id)
 
 @admin.register(Character)
 class CharacterAdmin(admin.ModelAdmin):

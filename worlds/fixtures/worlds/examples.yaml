@@ -572,6 +572,36 @@
   fields:
     universe: 2
     name: Buffy Summers
+- model: worlds.character
+  pk: 11
+  fields:
+    universe: 2
+    name: Willow Rosenberg
+- model: worlds.character
+  pk: 12
+  fields:
+    universe: 2
+    name: Alexander 'Xander' Harris
+- model: worlds.character
+  pk: 13
+  fields:
+    universe: 2
+    name: Rupert Giles
+- model: worlds.character
+  pk: 14
+  fields:
+    universe: 2
+    name: Angel
+- model: worlds.character
+  pk: 15
+  fields:
+    universe: 2
+    name: Cordelia
+- model: worlds.character
+  pk: 16
+  fields:
+    universe: 2
+    name: Wesley Wyndham-Price
 
 
 
