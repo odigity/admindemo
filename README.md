@@ -1,5 +1,7 @@
 See [Gallery](GALLERY.md) for screenshots.
 
+See [Gallery2](GALLERY2.md) for screenshots with `django-admin-tools` package.
+
 ## Dev Cycle
 
 * _(skip first time)_ `rm db.sqlite3 worlds/migrations/0001_initial.py; ./manage.py makemigrations`

@@ -10,19 +10,19 @@ class CharacterAdminForm(forms.ModelForm):
         self.fields['appearances'].queryset = UnitOfFiction.objects.filter(universe=self.instance.universe)
         self.fields['friends'].queryset = Character.objects.filter(universe=self.instance.universe).exclude(id=self.instance.id)
 
-@admin.register(Character)
+#@admin.register(Character)
 class CharacterAdmin(admin.ModelAdmin):
 #    pass
     form = CharacterAdminForm
     readonly_fields = ('universe',)
 
 
-@admin.register(Episode)
+#@admin.register(Episode)
 class EpisodeAdmin(admin.ModelAdmin):
     pass
 
 
-@admin.register(Medium)
+#@admin.register(Medium)
 class MediumAdmin(admin.ModelAdmin):
 #    pass
     list_display = [ 'label', 'parent_label' ]
@@ -30,13 +30,13 @@ class MediumAdmin(admin.ModelAdmin):
 #    ordering = [ 'parent__label' ]
 
 
-@admin.register(Series)
+#@admin.register(Series)
 class SeriesAdmin(admin.ModelAdmin):
 #    pass
     readonly_fields = ('universe',)
 
 
-@admin.register(UnitOfFiction)
+#@admin.register(UnitOfFiction)
 class UnitOfFictionAdmin(admin.ModelAdmin):
 #    date_hierarchy = 'pub_date'
 #    list_display = [ 'universe', 'ordinal', 'title', 'pub_date' ]
@@ -51,7 +51,7 @@ class UnitOfFictionAdmin(admin.ModelAdmin):
     readonly_fields = ('universe',)
 
 
-@admin.register(Universe)
+#@admin.register(Universe)
 class UniverseAdmin(admin.ModelAdmin):
     pass
 #    fields = [ 'name', 'creator', 'birth_year' ]

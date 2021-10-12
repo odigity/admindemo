@@ -11,7 +11,7 @@ URL                       | Name
 /admin/APP/MODEL/1/change | Change
 /admin/APP/MODEL/add      | Add
 
-## Django Admin - Defaults
+## Django Admin - Native
 
 ### Index page, empty
 
@@ -142,15 +142,3 @@ URL                       | Name
 (`universe_name` -> custom method on UnitOfFiction model)
 
 ![](gallery/30.png?raw=true)
-
-
-
-
-
-## Django Admin - Options
-
-TODO
-
-## Package: django-admin-tools
-
-TODO
