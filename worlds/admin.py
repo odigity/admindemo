@@ -24,8 +24,13 @@ class EpisodeAdmin(admin.ModelAdmin):
 @admin.register(Medium)
 class MediumAdmin(admin.ModelAdmin):
 #    pass
-    list_display = ('label', 'parent', 'parent_id')
+    list_display = ('label', 'orderable_parent')
     list_select_related = ('parent',)   # optimize queries
+
+    @admin.display(description='parent', ordering='parent__label')
+    def orderable_parent(self, obj):
+        return obj.parent and obj.parent.label or None
+
 
 @admin.register(Series)
 class SeriesAdmin(admin.ModelAdmin):
