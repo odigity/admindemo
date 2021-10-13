@@ -26,8 +26,31 @@ class CustomIndexDashboard(Dashboard):
     """
     Custom index dashboard for admindemo.
     """
+#    columns = 3
     def init_with_context(self, context):
         site_name = get_admin_site_name(context)
+
+#        self.children.append(modules.DashboardModule(
+#            _('Foo'),
+#            pre_content="pre_content",
+#            children=[ "child1", "child2" ],
+#            post_content="post_content",
+#        ))
+
+#        self.children.append(modules.ModelList(
+#            _('new ModelList for models=worlds.*'),
+#            models=[ 'worlds.*' ],
+#        ))
+
+        self.children.append(modules.Group(
+            _('Group Module (accordion)'),
+            display='accordion',
+            children=[
+                modules.ModelList('Worlds', models=[ 'worlds.*' ]),
+                modules.RecentActions(_('Recent Actions'), 5)
+            ],
+        ))
+
         # append a link list module for "quick links"
         self.children.append(modules.LinkList(
             _('Quick links'),
@@ -35,18 +58,23 @@ class CustomIndexDashboard(Dashboard):
             draggable=False,
             deletable=False,
             collapsible=False,
+#            enabled=False,
+#            title_url='https://google.com/',
+#            pre_content="pre_content",
+#            post_content="post_content",
             children=[
                 [_('Return to site'), '/'],
                 [_('Change password'),
                  reverse('%s:password_change' % site_name)],
                 [_('Log out'), reverse('%s:logout' % site_name)],
-            ]
+            ],
         ))
 
         # append an app list module for "Applications"
         self.children.append(modules.AppList(
             _('Applications'),
             exclude=('django.contrib.*',),
+ #           title_url='https://google.com/',
         ))
 
         # append an app list module for "Administration"
@@ -84,7 +112,7 @@ class CustomIndexDashboard(Dashboard):
                     'url': 'irc://irc.freenode.net/django',
                     'external': True,
                 },
-            ]
+            ],
         ))
 
 

@@ -4,10 +4,10 @@
 
 I'm using the following terminology taken from the Django docs:
 
-URL                       | Name
-------------------------- | ----------
-/admin/                   | Index
-/admin/APP/               | App Index
+URL                       | Name       | admin_tools
+------------------------- | ---------- | -------------------
+/admin/                   | Index      | Index Dashboard
+/admin/APP/               | App Index  | App Index Dashboard
 /admin/APP/MODEL/         | Changelist
 /admin/APP/MODEL/1/change | Change
 /admin/APP/MODEL/add      | Add
@@ -21,3 +21,56 @@ URL                       | Name
 ### Index page, populated
 
 ![](gallery2/2.png?raw=true)
+
+### Index page, with disabled Bookmarks
+
+![](gallery2/3.png?raw=true)
+
+### Index page, with enabled=False on Quick Links module
+
+![](gallery2/7.png?raw=true)
+
+### Index page, with right-side modules deleted by user
+
+![](gallery2/4.png?raw=true)
+
+### Index page, with modules dragged to different positions by user
+
+![](gallery2/5.png?raw=true)
+
+### Index page, with columns = 3
+
+![](gallery2/6.png?raw=true)
+
+### Index page, with title_url set on first two modules
+
+![](gallery2/8.png?raw=true)
+
+### Index page, with pre_content and post_content set
+
+![](gallery2/9.png?raw=true)
+
+### Index page, with new DashboardModule (pre_content, post_content, 2 text children)
+
+![](gallery2/10.png?raw=true)
+
+### Index page, with new ModuleList (models=worlds.*)
+
+![](gallery2/11.png?raw=true)
+
+### Index page, with Group module (display='tabs')
+
+![](gallery2/12.png?raw=true)
+
+### Index page, with Group module (display='stacked')
+
+![](gallery2/13.png?raw=true)
+
+### Index page, with Group module (display='accordion')
+
+![](gallery2/14.png?raw=true)
+
+### ...clicked on second child
+
+![](gallery2/15.png?raw=true)
+
