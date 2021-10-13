@@ -42,14 +42,14 @@ class CustomIndexDashboard(Dashboard):
 #            models=[ 'worlds.*' ],
 #        ))
 
-        self.children.append(modules.Group(
-            _('Group Module (accordion)'),
-            display='accordion',
-            children=[
-                modules.ModelList('Worlds', models=[ 'worlds.*' ]),
-                modules.RecentActions(_('Recent Actions'), 5)
-            ],
-        ))
+#        self.children.append(modules.Group(
+#            _('Group Module (accordion)'),
+#            display='accordion',
+#            children=[
+#                modules.ModelList('Worlds', models=[ 'worlds.*' ]),
+#                modules.RecentActions(_('Recent Actions'), 5)
+#            ],
+#        ))
 
         # append a link list module for "quick links"
         self.children.append(modules.LinkList(
@@ -63,24 +63,23 @@ class CustomIndexDashboard(Dashboard):
 #            pre_content="pre_content",
 #            post_content="post_content",
             children=[
-                [_('Return to site'), '/'],
-                [_('Change password'),
-                 reverse('%s:password_change' % site_name)],
-                [_('Log out'), reverse('%s:logout' % site_name)],
+                [ _('Return to site'), '/' ],
+                [ _('Change password'), reverse('%s:password_change' % site_name) ],
+                [ _('Log out'), reverse('%s:logout' % site_name) ],
             ],
         ))
 
         # append an app list module for "Applications"
         self.children.append(modules.AppList(
             _('Applications'),
-            exclude=('django.contrib.*',),
+            exclude=[ 'django.contrib.*' ],
  #           title_url='https://google.com/',
         ))
 
         # append an app list module for "Administration"
         self.children.append(modules.AppList(
             _('Administration'),
-            models=('django.contrib.*',),
+            models=[ 'django.contrib.*' ],
         ))
 
         # append a recent actions module

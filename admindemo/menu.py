@@ -29,12 +29,18 @@ class CustomMenu(Menu):
             items.Bookmarks(),
             items.AppList(
                 _('Applications'),
-                exclude=('django.contrib.*',)
+                exclude=[ 'django.contrib.*' ],
+#                accesskey='a',
             ),
             items.AppList(
                 _('Administration'),
-                models=('django.contrib.*',)
-            )
+                models=[ 'django.contrib.*' ]
+            ),
+#            items.MenuItem(_('Google'), 'https://google.com/', accesskey='g'),
+            items.ModelList(
+                _('Worlds'),
+                models=[ 'worlds.*' ],
+            ),
         ]
 
     def init_with_context(self, context):

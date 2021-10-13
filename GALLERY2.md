@@ -50,27 +50,35 @@ URL                       | Name       | admin_tools
 
 ![](gallery2/9.png?raw=true)
 
-### Index page, with new DashboardModule (pre_content, post_content, 2 text children)
+### Index page, with DashboardModule (pre_content, post_content, 2 text children)
 
 ![](gallery2/10.png?raw=true)
 
-### Index page, with new ModuleList (models=worlds.*)
+### Index page, with ModelList(DashboardModule) (models=worlds.*)
 
 ![](gallery2/11.png?raw=true)
 
-### Index page, with Group module (display='tabs')
+### Index page, with Group(DashboardModule) (display='tabs')
 
 ![](gallery2/12.png?raw=true)
 
-### Index page, with Group module (display='stacked')
+### Index page, with Group(DashboardModule) (display='stacked')
 
 ![](gallery2/13.png?raw=true)
 
-### Index page, with Group module (display='accordion')
+### Index page, with Group(DashboardModule) (display='accordion')
 
 ![](gallery2/14.png?raw=true)
 
 ### ...clicked on second child
 
 ![](gallery2/15.png?raw=true)
+
+### Index page, with MenuItem linked to Google
+
+![](gallery2/16.png?raw=true)
+
+### Index page, with ModelList(MenuItem) (models=worlds.*)
+
+![](gallery2/17.png?raw=true)
 
