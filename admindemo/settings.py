@@ -156,3 +156,7 @@ LOGGING = {
         }
     }
 }
+
+ADMIN_TOOLS_MENU                = 'admindemo.menu.CustomMenu'
+ADMIN_TOOLS_INDEX_DASHBOARD     = 'admindemo.dashboard.CustomIndexDashboard'
+ADMIN_TOOLS_APP_INDEX_DASHBOARD = 'admindemo.dashboard.CustomAppIndexDashboard'

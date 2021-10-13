@@ -7,6 +7,7 @@ I'm using the following terminology taken from the Django docs:
 URL                       | Name
 ------------------------- | ----------
 /admin/                   | Index
+/admin/APP/               | App Index
 /admin/APP/MODEL/         | Changelist
 /admin/APP/MODEL/1/change | Change
 /admin/APP/MODEL/add      | Add
@@ -24,6 +25,10 @@ URL                       | Name
 ### Index page, populated
 
 ![](gallery/2.png?raw=true)
+
+### App Index page
+
+![](gallery/3.png?raw=true)
 
 ### Change page for Universe
 
