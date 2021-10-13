@@ -17,6 +17,10 @@ URL                       | Name
 
 ![](gallery/1.png?raw=true)
 
+### Index page, empty - with custom index_title/site_header/site_title and site_url = None
+
+![](gallery/31.png?raw=true)
+
 ### Index page, populated
 
 ![](gallery/2.png?raw=true)
