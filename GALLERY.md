@@ -1,4 +1,4 @@
-# Gallery
+# Gallery - Django Admin - Native
 
 ## Page Names
 
@@ -12,7 +12,7 @@ URL                       | Name
 /admin/APP/MODEL/1/change | Change
 /admin/APP/MODEL/add      | Add
 
-## Django Admin - Native
+## Screnshots
 
 ### Index page, empty
 
@@ -28,7 +28,7 @@ URL                       | Name
 
 ### App Index page
 
-![](gallery/3.png?raw=true)
+![](gallery/32.png?raw=true)
 
 ### Change page for Universe
 

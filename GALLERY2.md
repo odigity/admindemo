@@ -1,4 +1,4 @@
-# Gallery2
+# Gallery2 - Django Admin - With Package `django-admin-tools`
 
 ## Page Names
 
@@ -12,7 +12,7 @@ URL                       | Name       | admin_tools
 /admin/APP/MODEL/1/change | Change
 /admin/APP/MODEL/add      | Add
 
-## Django Admin - With Package `django-admin-tools`
+## Screenshots
 
 ### Index page, empty
 
