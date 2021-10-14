@@ -106,14 +106,6 @@ URL                       | Name
 
 ![](gallery/12.png?raw=true)
 
-### Changelist page for Mediums
-
-![](gallery/19.png?raw=true)
-
-### Changelist page for Mediums, with list_display = [ 'label', 'parent' ]
-
-![](gallery/20.png?raw=true)
-
 ### Changelist page for Units of Fiction
 
 ![](gallery/22.png?raw=true)
