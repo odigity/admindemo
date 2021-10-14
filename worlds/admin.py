@@ -38,16 +38,16 @@ class SeriesAdmin(admin.ModelAdmin):
 
 @admin.register(UnitOfFiction)
 class UnitOfFictionAdmin(admin.ModelAdmin):
-#    date_hierarchy = 'pub_date'
+    date_hierarchy = 'pub_date'
 #    list_display = [ 'universe', 'ordinal', 'title', 'pub_date' ]
 #    list_display = [ 'orderable_universe', 'ordinal', 'title', 'pub_date' ]
-    list_display = [ 'universe_name', 'ordinal', 'medium_label', 'title', 'pub_date' ]
-    list_display_links = [ 'title' ]
+#    list_display = [ 'universe_name', 'ordinal', 'medium_label', 'title', 'pub_date' ]
+#    list_display_links = [ 'title' ]
 #    list_filter = [ 'pub_date' ]
-#    list_filter = [ 'pub_date', 'medium', 'universe', 'length' ]
-    list_select_related = [ 'medium', 'universe' ]                          # optimize queries
+    list_filter = [ 'pub_date', 'medium', 'universe', 'length' ]
+#    list_select_related = [ 'medium', 'universe' ]                          # optimize queries
 #    ordering = [ 'universe', 'ordinal' ]
-    ordering = [ 'universe__name', 'ordinal' ]
+#    ordering = [ 'universe__name', 'ordinal' ]
     readonly_fields = ('universe',)
 
 

@@ -58,7 +58,7 @@
 - model: worlds.medium
   pk: 10
   fields:
-    label: Filmed
+    label: Live Action
     parent: 3
 - model: worlds.medium
   pk: 11
