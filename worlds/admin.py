@@ -48,12 +48,26 @@ class UnitOfFictionAdmin(admin.ModelAdmin):
 #    list_select_related = [ 'medium', 'universe' ]                          # optimize queries
 #    ordering = [ 'universe', 'ordinal' ]
 #    ordering = [ 'universe__name', 'ordinal' ]
-    readonly_fields = ('universe',)
+    readonly_fields = [ 'universe' ]
 
+
+class CharacterInline(admin.StackedInline):
+#class CharacterInline(admin.TabularInline):
+    model = Character
+    extra = 0
+#    show_change_link = True
+    fields = [ 'name', 'friends' ]
+    readonly_fields = [ 'friends' ]
+#    fieldsets = [
+#        ( None, { 'fields': [ 'name' ] } ),
+#        ( 'Associations', { 'fields': [ 'friends' ] } ),
+#    ]
+#    def has_change_permission(self, request, obj=None):
+#        return False
 
 @admin.register(Universe)
 class UniverseAdmin(admin.ModelAdmin):
-    pass
+#    pass
 #    fields = [ 'name', 'creator', 'birth_year' ]
 #    fields = [ 'name', ( 'creator', 'birth_year' ) ]
 #    fields = [ 'name', [ 'creator', 'birth_year' ] ]
@@ -72,3 +86,4 @@ class UniverseAdmin(admin.ModelAdmin):
 #    save_as = True
 #    save_on_top = True
 #    search_fields = [ 'name', 'creator' ]
+    inlines = [ CharacterInline ]

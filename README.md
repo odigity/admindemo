@@ -56,3 +56,8 @@ worlds_universe
     creator                 varchar(30) NOT NULL
     birth_year              integer     NOT NULL
 ```
+
+## TODO
+
+* Why are friends inconsistent on Universe Change page?
+* try .filter_horizontal, .filter_vertical

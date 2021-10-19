@@ -106,6 +106,52 @@ URL                       | Name
 
 ![](gallery/12.png?raw=true)
 
+### Change page for Universe, with inline = [ Character(Tabular) ]
+
+![](gallery/33a.png?raw=true)
+![](gallery/33b.png?raw=true)
+
+### Change page for Universe, with inline = [ Character(Tabular, extra = 0) ]
+
+![](gallery/34b.png?raw=true)
+
+### Change page for Universe, with inline = [ Character(Tabular, has_change_permission -> False) ]
+
+![](gallery/35.png?raw=true)
+
+### Change page for Universe, with inline = [ Character(Tabular, has_change_permission -> False, show_change_link = True) ]
+
+![](gallery/36.png?raw=true)
+
+### Change page for Universe, with inline = [ Character(Tabular, show_change_link = True) ]
+
+![](gallery/37.png?raw=true)
+
+### Change page for Universe, with inline = [ Character(Tabular, fields = [ 'name', 'friends' ]) ]
+
+![](gallery/38.png?raw=true)
+
+### Change page for Universe, with inline = [ Character(Tabular, fields = [ 'name', 'friends' ], readonly_fields = [ 'friends' ]) ]
+
+![](gallery/39.png?raw=true)
+
+### Change page for Universe, with inline = [ Character(Stacked) ]
+
+![](gallery/40a.png?raw=true)
+![](gallery/40b.png?raw=true)
+
+### Change page for Universe, with inline = [ Character(Stacked, show_change_link = True) ]
+
+![](gallery/41.png?raw=true)
+
+### Change page for Universe, with inline = [ Character(Stacked, show_change_link = True, has_change_permission -> False) ]
+
+![](gallery/42.png?raw=true)
+
+### Change page for Universe, with inline = [ Character(Stacked, fields = [ 'name', 'friends' ], readonly_fields = [ 'friends' ]) ]
+
+![](gallery/43.png?raw=true)
+
 ### Changelist page for Units of Fiction
 
 ![](gallery/22.png?raw=true)
