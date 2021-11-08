@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'admindemo.urls'
@@ -161,3 +163,7 @@ LOGGING = {
 ADMIN_TOOLS_MENU                = 'admindemo.menu.CustomMenu'
 ADMIN_TOOLS_INDEX_DASHBOARD     = 'admindemo.dashboard.CustomIndexDashboard'
 ADMIN_TOOLS_APP_INDEX_DASHBOARD = 'admindemo.dashboard.CustomAppIndexDashboard'
+
+INTERNAL_IPS = [
+    '127.0.0.1',
+]

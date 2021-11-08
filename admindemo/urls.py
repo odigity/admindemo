@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+import debug_toolbar
 
 
 #admin.site.index_title = "index_title"
@@ -27,4 +28,5 @@ urlpatterns = [
     path('admin_tools/', include('admin_tools.urls')),
     path('admin/doc/', include('django.contrib.admindocs.urls')),
     path('admin/', admin.site.urls),
+    path('__debug__/', include(debug_toolbar.urls)),
 ]
