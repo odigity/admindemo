@@ -24,6 +24,7 @@ from django.urls import include, path
 
 
 urlpatterns = [
-#    path('admin_tools/', include('admin_tools.urls')),
+    path('admin_tools/', include('admin_tools.urls')),
+    path('admin/doc/', include('django.contrib.admindocs.urls')),
     path('admin/', admin.site.urls),
 ]
