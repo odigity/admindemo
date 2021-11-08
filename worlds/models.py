@@ -17,9 +17,18 @@ class Medium(models.Model):
 
 
 class Universe(models.Model):
-    name = models.CharField(max_length=30)
-    creator = models.CharField(max_length=30)
-    birth_year = models.IntegerField()
+    """Docstring for model Universe."""
+    name = models.CharField(max_length=30, verbose_name="verbose_name for name", help_text="help_text for name")
+    creator = models.CharField(max_length=30, verbose_name="verbose_name for creator", help_text="help_text for creator")
+    birth_year = models.IntegerField(verbose_name="verbose_name for birth_year", help_text="help_text for birth_year")
+
+    def my_instance_method(self):
+        """Docstring for my_instance_method."""
+        pass
+
+    def my_instance_method_with_params(self, param1):
+        """Docstring for my_instance_method_with_params."""
+        pass
 
     def __str__(self):
         return self.name
