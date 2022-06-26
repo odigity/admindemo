@@ -151,7 +151,7 @@ if DEBUG:
     ]
 
     DEBUG_TOOLBAR_CONFIG = {
-        "SHOW_TOOLBAR_CALLBACK": lambda request: True if DEBUG else False,
+        'SHOW_TOOLBAR_CALLBACK': lambda request: True if DEBUG else False,
     }
 
     # From: https://neilwithdata.com/django-sql-logging
