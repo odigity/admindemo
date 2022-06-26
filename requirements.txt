@@ -1,0 +1,5 @@
+Django==3.2.13
+
+# dev
+django-debug-toolbar==3.5.0
+django-extensions==3.1.5
